@@ -1,0 +1,55 @@
+//btn section-explorer restaurants
+.search-resto__btn {
+  background: linear-gradient(
+    to bottom right,
+    $color-secondary,
+    30%,
+    $color-primary
+  );
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 2px 2px 8px rgba(75, 74, 74, 0.6);
+  outline: none;
+  cursor: pointer;
+  transition: all 200ms ease-out;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 5px 4px 10px rgba(12, 12, 12, 0.8);
+  }
+}
+
+//btn section-fonctionnement
+.choice-card {
+  color: #000;
+  width: 330px;
+  height: 70px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(12, 12, 12, 0.6);
+  position: relative;
+
+  .fa-solid {
+    color: #7e7e7e;
+    font-size: 24px;
+  }
+
+  .choice-card__title {
+    margin-left: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+}

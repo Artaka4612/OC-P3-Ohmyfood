@@ -1,0 +1,46 @@
+////////CARTE-PHOTO-RESTO
+.card-photo {
+  background: #fff;
+  width: 331px;
+  height: 60%;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  position: relative;
+  &__picture {
+    width: 100%;
+    height: 177px;
+    margin-bottom: 10px;
+    border-radius: 25px 25px 0 0;
+  }
+  &__btn-new {
+    position: absolute;
+    display: inline;
+    color: $color-green-txt;
+    font-weight: 500;
+    font-size: 14px;
+    background: $color-green;
+    border-radius: 5px;
+    padding: 5px 10px;
+    top: 20px;
+    right: 15px;
+  }
+  &__info-text {
+    height: 78px;
+    font-weight: 300;
+    margin-left: 10px;
+    line-height: 1.5;
+    position: relative;
+    .fa-solid {
+      font-size: 25px;
+      position: absolute;
+      right: 20px;
+      bottom: 45px;
+      color: #fff;
+      text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+      &:hover {
+        text-shadow: none;
+        color: $color-primary;
+      }
+    }
+  }
+}

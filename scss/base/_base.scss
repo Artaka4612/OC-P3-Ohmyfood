@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background: #fff;
+  font-weight: lighter;
+  font-family: "roboto", sans-serif;
+  color: #000;
+}
+/*main {
+  margin: 0 20px;
+}*/
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
