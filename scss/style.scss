@@ -1,7 +1,12 @@
 @import "base/reset";
 @import "utils/variables";
-@import "components/btn";
+@import "base/breakpoints";
+
+@import "components/btn-home";
+@import "components/btn-menu";
 @import "layout/footer";
 @import "components/card-photo";
+
 @import "base/base";
 @import "pages/home";
+@import "pages/menu";

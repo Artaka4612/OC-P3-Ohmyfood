@@ -28,6 +28,19 @@
 }
 
 //btn section-fonctionnement
+
+.choice-list {
+  @include breakpoint(large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include breakpoint(xlarge) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .choice-card {
   color: #000;
   width: 330px;

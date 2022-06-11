@@ -1,0 +1,47 @@
+/****titre****/
+.menu-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 28xp;
+  }
+  .fa-solid {
+    font-size: 22px;
+    color: #f6f6f6;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  }
+}
+.menu {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  padding-top: 20px;
+  /*min-width: 600px;
+  width: 100%;
+  margin: auto;*/
+}
+.menu-bloc {
+  margin-bottom: 50px;
+  h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    position: relative;
+    &:after {
+      content: "";
+      border: 2px solid $color-tertiary;
+      width: 40px;
+      position: absolute;
+      margin: 3px;
+      bottom: -12px;
+      left: -3px;
+    }
+  }
+}
+
+.search-resto__btn {
+  margin-bottom: 50px;
+}
