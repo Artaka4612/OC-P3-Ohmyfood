@@ -338,7 +338,7 @@ template {
   display: none;
 }
 
-.search-resto__btn {
+.btn-pink {
   background: linear-gradient(to bottom right, #ff79da, 30%, #9356dc);
   color: #fff;
   font-size: 16px;
@@ -355,26 +355,26 @@ template {
   cursor: pointer;
   transition: all 200ms ease-out;
 }
-.search-resto__btn:hover {
+.btn-pink:hover {
   opacity: 0.8;
   box-shadow: 5px 4px 10px rgba(12, 12, 12, 0.8);
 }
 
 @media (min-width: 56.25em) {
-  .choice-list {
+  .fonct-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
 @media (min-width: 68.75em) {
-  .choice-list {
+  .fonct-list {
     display: flex;
     justify-content: space-around;
   }
 }
 
-.choice-card {
+.fonct-card {
   color: #000;
   width: 330px;
   height: 70px;
@@ -388,11 +388,11 @@ template {
   box-shadow: 2px 2px 8px rgba(12, 12, 12, 0.6);
   position: relative;
 }
-.choice-card .fa-solid {
+.fonct-card .fa-solid {
   color: #7e7e7e;
   font-size: 24px;
 }
-.choice-card .choice-card__title {
+.fonct-card .fonct-card__title {
   margin-left: 25px;
   font-weight: bold;
   margin-right: 10px;
@@ -424,6 +424,31 @@ template {
   margin-top: 20px;
 }
 
+/*.menu-card {
+  border: 2px solid purple;
+  width: 350px;
+  height: 70px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(75, 74, 74, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .menu-txt {
+    font-size: 15px;
+    margin-left: 20px;
+    .menu-txt-sb {
+      font-weight: 300;
+    }
+  }
+  .price {
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+}*/
 .bottom-page {
   background-color: #353535;
   color: #fff;
@@ -505,12 +530,14 @@ template {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  box-sizing: border-box;
+.main-page {
+  width: 100%;
+  margin: auto;
+  border: 2px solid red;
   background: #fff;
-  /*font-weight: lighter;*/
   font-size: 16px;
   font-family: "roboto", sans-serif;
   color: #000;
@@ -522,34 +549,28 @@ a:visited {
   color: #000;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-}
-.header .fa-solid {
-  display: none;
-}
-.header .logo {
-  max-width: 25%;
-  width: 45%;
+.logo {
+  display: block;
+  width: 50%;
   margin: auto;
   padding: 25px 0 20px 0;
 }
 
 .local {
+  display: flex;
+  justify-content: center;
   padding: 15px 0;
   background: #ecebeb;
   font-size: 1em;
   font-weight: 410;
-  text-align: center;
   box-shadow: 0px -1px 3px rgb(172, 170, 170);
+  padding-right: 40px;
 }
 .local .fa-solid {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .search-resto {
-  width: 100%;
   height: 290px;
   margin: auto;
   background: #f6f6f6;
@@ -571,31 +592,31 @@ a:visited {
   margin-bottom: 30px;
 }
 
-.section-fonct {
+.fonct {
   width: 90%;
   margin: auto;
   margin-bottom: 60px;
 }
-.section-fonct h2 {
+.fonct h2 {
   font-weight: bold;
   font-size: 24px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 @media (min-width: 56.25em) {
-  .section-fonct h2 {
+  .fonct h2 {
     text-align: center;
     margin-bottom: 50px;
   }
 }
 @media (min-width: 68.75em) {
-  .section-fonct h2 {
+  .fonct h2 {
     text-align: center;
     margin-bottom: 50px;
   }
 }
 
-.choice-card .choice-number {
+.fonct-card .fonct-number {
   background: #9356dc;
   color: #fff;
   font-weight: 400;
@@ -605,34 +626,34 @@ a:visited {
   left: -15px;
 }
 
-.section-list-photo {
+.restau-photo {
   background: #f2f2f2;
 }
-.section-list-photo > h2 {
+.restau-photo > h2 {
   padding-top: 20px;
   margin-bottom: 25px;
   margin-left: 20px;
 }
 @media (min-width: 56.25em) {
-  .section-list-photo > h2 {
+  .restau-photo > h2 {
     text-align: center;
     margin-bottom: 50px;
   }
 }
-.section-list-photo .list-photo {
+.restau-photo .restau-list-photo {
   width: 90%;
   margin: auto;
   padding-bottom: 65px;
 }
 @media (min-width: 56.25em) {
-  .section-list-photo .list-photo {
+  .restau-photo .restau-list-photo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
 @media (min-width: 68.75em) {
-  .section-list-photo .list-photo {
+  .restau-photo .restau-list-photo {
     width: 60%;
   }
 }

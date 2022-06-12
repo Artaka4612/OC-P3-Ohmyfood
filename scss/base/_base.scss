@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-}
-body {
   box-sizing: border-box;
+}
+
+.main-page {
+  width: 100%;
+  margin: auto;
+  border: 2px solid red;
   background: #fff;
-  /*font-weight: lighter;*/
   font-size: 16px;
   font-family: "roboto", sans-serif;
   color: #000;

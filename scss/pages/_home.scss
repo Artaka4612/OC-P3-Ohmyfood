@@ -1,33 +1,29 @@
 ////////// HEADER
-.header {
-  display: flex;
-  align-items: center;
-  .fa-solid {
-    display: none;
-  }
-  .logo {
-    max-width: 25%;
-    width: 45%;
-    margin: auto;
-    padding: 25px 0 20px 0;
-  }
+
+.logo {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 25px 0 20px 0;
 }
+
 //////SECTION-LOCALITE
 .local {
+  display: flex;
+  justify-content: center;
   padding: 15px 0;
   background: #ecebeb;
   font-size: 1em;
   font-weight: 410;
-  text-align: center;
   box-shadow: 0px -1px 3px rgb(172, 170, 170);
+  padding-right: 40px;
   .fa-solid {
-    margin-right: 15px;
+    margin-right: 20px;
   }
 }
 
 //////SECTION-RECHERCHE-RESTO
 .search-resto {
-  width: 100%;
   height: 290px;
   margin: auto;
   background: #f6f6f6;
@@ -53,7 +49,7 @@
 
 ////////SECTION-FONCTIONNEMENT
 
-.section-fonct {
+.fonct {
   width: 90%;
   margin: auto;
   margin-bottom: 60px;
@@ -76,8 +72,8 @@
   }
 }
 
-.choice-card {
-  .choice-number {
+.fonct-card {
+  .fonct-number {
     background: $color-primary;
     color: #fff;
     font-weight: 400;
@@ -88,7 +84,7 @@
   }
 }
 ////////Restaurants
-.section-list-photo {
+.restau-photo {
   background: #f2f2f2;
   > h2 {
     padding-top: 20px;
@@ -99,7 +95,7 @@
       margin-bottom: 50px;
     }
   }
-  .list-photo {
+  .restau-list-photo {
     width: 90%;
     margin: auto;
     padding-bottom: 65px;
