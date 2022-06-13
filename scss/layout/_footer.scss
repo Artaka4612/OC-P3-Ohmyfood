@@ -23,8 +23,17 @@
     & i {
       margin-right: 10px;
     }
+    .mail:link,
+    .mail:visited {
+      color: #fff;
+    }
+    .mail:hover,
+    .mail:active {
+      color: #fff;
+    }
   }
 }
+
 .footer-container {
   @include breakpoint(large) {
     width: 40%;

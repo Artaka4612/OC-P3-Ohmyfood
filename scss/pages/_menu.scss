@@ -1,14 +1,34 @@
 //HEADER
+.menu-header {
+  position: relative;
+  .header-img-resto {
+    background-image: url("/images/restaurants/small_stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+
+    position: absolute;
+  }
+}
 .menu-header-logo {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
   .menu-img {
-    width: 50%;
+    width: 35%;
   }
   .fa-solid {
-    margin-right: 90px;
+    margin-right: 120px;
   }
+}
+
+.menu {
+  margin-top: 310px;
+  border-radius: 25px;
 }
 /****titre****/
 .menu-title {
@@ -39,7 +59,7 @@
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     margin-left: 25px;
     position: relative;
     &:after {
