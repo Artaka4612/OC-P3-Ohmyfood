@@ -19,7 +19,8 @@
   box-shadow: 2px 2px 8px rgba(75, 74, 74, 0.6);
   outline: none;
   cursor: pointer;
-  transition: all 200ms ease-out;
+  opacity: 1;
+  transition: box-shadow 400ms ease-out, opacity 500ms ease-out;
 
   &:hover {
     opacity: 0.8;
@@ -73,11 +74,6 @@
     left: -12px;
   }
 }
-/*.fonct3 .btn-fonct-card {
-  background: #f5edff;
-  .fa-solid {
-    color: $color-primary;
-  }*/
 
 //btn-page des menus
 .menu-card {
@@ -91,7 +87,6 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-  margin-left: 20px;
 
   .menu-txt {
     font-size: 15px;
