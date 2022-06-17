@@ -1,0 +1,43 @@
+//ANIMATION btn-card-menu
+
+.menu-card {
+  position: relative;
+  .check-price {
+    position: absolute;
+    right: -50px;
+    cursor: pointer;
+    transition: translateX(0) 450ms ease-out;
+    -webkit-transition: translateX(0) 450ms ease-out;
+    -moz-transition: translateX(0) 450ms ease-out;
+    -ms-transition: translateX(0) 450ms ease-out;
+    -o-transition: translateX(0) 450ms ease-out;
+    &:hover {
+      transform: translateX(-50px);
+      -webkit-transform: translateX(-50px) 450ms ease;
+      -moz-transform: translateX(-50px) 450ms ease;
+      -ms-transform: translateX(-50px) 450ms ease;
+      -o-transform: translateX(-50px) 450ms ease;
+    }
+
+    .box-price {
+      margin-right: 0px;
+      font-weight: bold;
+    }
+    .box-fa {
+      opacity: 0;
+      margin-left: 10px;
+      padding: 20px 20px;
+      background-color: $color-tertiary;
+      color: #fff;
+      font-size: 30px;
+      border-radius: 0px 20px 20px 0;
+      -webkit-border-radius: 0px 20px 20px 0;
+      -moz-border-radius: 0px 20px 20px 0;
+      -ms-border-radius: 0px 20px 20px 0;
+      -o-border-radius: 0px 20px 20px 0;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
