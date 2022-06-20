@@ -1,10 +1,11 @@
 @import "base/reset";
-@import "utils/variables";
 
+@import "utils/variables";
 @import "base/breakpoints";
 @import "utils/animation";
 @import "components/btn";
 @import "layout/footer";
+@import "components/loader.scss";
 @import "components/card-photo";
 @import "base/base";
 @import "pages/home";

@@ -1,4 +1,4 @@
-//ANIMATION btn-card-menu
+//ANIMATION btn-menu
 
 .menu-card {
   position: relative;
@@ -21,7 +21,11 @@
 
     .box-price {
       margin-right: 0px;
+      padding-left: 10px;
+      padding-top: 30px;
+      padding-bottom: 20px;
       font-weight: bold;
+      background-color: #fff;
     }
     .box-fa {
       opacity: 0;

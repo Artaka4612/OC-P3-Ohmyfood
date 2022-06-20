@@ -6,7 +6,7 @@
   margin: auto;
   padding: 25px 0 20px 0;
   @include breakpoint(large) {
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -94,7 +94,6 @@
     @include breakpoint(large) {
       text-align: center;
       margin-bottom: 50px;
-      width: 0%;
     }
   }
   > h2 {
@@ -112,12 +111,13 @@
     padding-bottom: 65px;
 
     @include breakpoint(large) {
+      width: 70%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
     }
     @include breakpoint(xlarge) {
-      width: 60%;
+      width: 50%;
     }
   }
 }

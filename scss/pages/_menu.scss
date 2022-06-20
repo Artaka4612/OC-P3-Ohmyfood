@@ -1,33 +1,50 @@
 //HEADER
 
 .menu-header-logo {
-  width: 120%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  width: 150%;
+  margin: auto;
   padding-top: 35px;
 
-  .menu-img-logo {
-    width: 30%;
+  @include breakpoint(large) {
+    /*padding-bottom: 20px;
+    width: 35%;
+    margin: auto;*/
+    margin-bottom: 30px;
   }
-  .fa-solid {
+
+  .nav {
     margin-right: 85px;
     margin-left: 25px;
+    @include breakpoint(large) {
+      font-size: 25px;
+    }
+  }
+  .menu-logo {
+    width: 170px;
+    @include breakpoint(large) {
+      width: 250px;
+    }
   }
 }
 //image-resto
 
 .menu-img-resto {
   width: 375px;
+  min-width: 375px;
+  max-width: 500px;
+  height: auto;
   width: 100%;
   position: relative;
   top: 25px;
   z-index: -1;
   @include breakpoint(large) {
-    height: 20%;
-    width: auto;
+    display: block;
+    align-items: center;
     margin: auto;
-    margin-bottom: 50px;
+    box-shadow: 5px 2px #d3d1d1;
+    border: 2px solid #000;
   }
 }
 
@@ -39,37 +56,26 @@
   align-items: baseline;
   justify-content: space-around;
   @include breakpoint(large) {
-    width: 50%;
+    width: 45%;
     margin: auto;
-    margin-left: 20px;
     margin-bottom: 50px;
-    position: absolute;
-    top: 25%;
-    left: 55%;
-  }
-  @include breakpoint(xlarge) {
-    position: absolute;
-    top: 25%;
-    left: 35%;
   }
 
   h1 {
     font-family: "Shrikhand", cursive;
     font-size: 28xp;
   }
-  .fa-solid .fa-heart {
-    font-size: 22px;
+  .fa-solid {
+    font-size: 25px;
     color: #f2f2f2;
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-    @include breakpoint(large) {
-      display: none;
-    }
   }
 }
 
 //Menus
-.menu {
+.menu-page {
   background-color: #f2f2f2;
+  border: 2px solid rgba($color: #dddddd, $alpha: 0.8);
   border-radius: 25px;
   padding-bottom: 30px;
   padding-top: 20px;
@@ -100,29 +106,19 @@
     }
   }
 }
-.menu-card {
+
+.bloc-plats {
   @include breakpoint(large) {
-    width: 80%;
     display: flex;
-    justify-content: space-between;
-  }
-}
-.menu-bloc {
-  @include breakpoint(large) {
-    margin-left: 10%;
-  }
-}
-.menu-main {
-  @include breakpoint(large) {
     width: 100%;
-    display: flex;
+    margin: auto;
+    margin-left: 12%;
     margin-bottom: 50px;
   }
 }
-.menu-desserts {
+.bloc-dessert {
   @include breakpoint(large) {
-    width: 50%;
-    margin: auto;
-    display: block;
+    width: 25%;
+    margin-bottom: 50px;
   }
 }

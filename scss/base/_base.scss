@@ -3,11 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  min-width: 375px;
+  max-width: 1400px;
+  margin: auto;
+}
 .main-page {
   width: 100%;
   margin: auto;
-
   background: #fff;
   font-size: 16px;
   font-family: "roboto", sans-serif;
