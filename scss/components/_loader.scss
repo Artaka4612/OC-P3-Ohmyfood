@@ -1,4 +1,20 @@
+.loader-container {
+  z-index: 900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+
+  animation: pageloader 1.8s linear forwards;
+  -webkit-animation: pageloader 1.8s linear forwards;
+  -moz-animation: spin 1.2s linear forwards;
+  -ms-animation: spin 1.2s linear forwards;
+  -o-animation: spin 1.2s linear forwards;
+}
 .loader {
+  z-index: 1000;
   background: $color-tertiary;
   border: 10px solid #f3f3f3;
   border-top: 10px solid $color-primary;
@@ -16,8 +32,11 @@
   right: 0;
   bottom: 0;
   left: 0;
-  animation: spin 1.2s linear forwards;
-  -webkit-animation: spin 1.2s linear forwards;
+  animation: spin 1.8s linear forwards;
+  -webkit-animation: spin 1.8s linear forwards;
+  -moz-animation: spin 1.2s linear forwards;
+  -ms-animation: spin 1.2s linear forwards;
+  -o-animation: spin 1.2s linear forwards;
 }
 @keyframes spin {
   0% {
@@ -35,5 +54,17 @@
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
+  }
+}
+@keyframes pageloader {
+  0% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1000;
   }
 }

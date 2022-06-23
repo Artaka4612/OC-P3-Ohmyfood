@@ -111,13 +111,13 @@
     padding-bottom: 65px;
 
     @include breakpoint(large) {
-      width: 70%;
+      width: 80%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
     }
     @include breakpoint(xlarge) {
-      width: 50%;
+      width: 70%;
     }
   }
 }

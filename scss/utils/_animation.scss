@@ -1,47 +1,117 @@
 //ANIMATION btn-menu
-
-.menu-card {
-  position: relative;
-  .check-price {
-    position: absolute;
-    right: -50px;
-    cursor: pointer;
-    transition: translateX(0) 450ms ease-out;
-    -webkit-transition: translateX(0) 450ms ease-out;
-    -moz-transition: translateX(0) 450ms ease-out;
-    -ms-transition: translateX(0) 450ms ease-out;
-    -o-transition: translateX(0) 450ms ease-out;
-    &:hover {
-      transform: translateX(-50px);
-      -webkit-transform: translateX(-50px) 450ms ease;
-      -moz-transform: translateX(-50px) 450ms ease;
-      -ms-transform: translateX(-50px) 450ms ease;
-      -o-transform: translateX(-50px) 450ms ease;
-    }
-
-    .box-price {
-      margin-right: 0px;
-      padding-left: 10px;
-      padding-top: 30px;
-      padding-bottom: 20px;
-      font-weight: bold;
-      background-color: #fff;
-    }
-    .box-fa {
-      opacity: 0;
-      margin-left: 10px;
-      padding: 20px 20px;
-      background-color: $color-tertiary;
+.menu-box {
+  /*border: 2px solid red;*/
+  overflow: hidden;
+  width: 360px;
+  height: 70px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  .menu-icon {
+    /*opacity: 0.6;
+    */
+    display: inline-block;
+    padding: 21px 25px 23px 22px;
+    background-color: $color-tertiary;
+    border-radius: 0px 20px 20px 0;
+    -webkit-border-radius: 0px 20px 20px 0;
+    -moz-border-radius: 0px 20px 20px 0;
+    -ms-border-radius: 0px 20px 20px 0;
+    -o-border-radius: 0px 20px 20px 0;
+    transform: translateX(360px) translateY(-70px);
+    -webkit-transform: translateX(360px) translateY(-70px);
+    -moz-transform: translateX(360px) translateY(-70px);
+    -ms-transform: translateX(360px) translateY(-70px);
+    -o-transform: translateX(360px) translateY(-70px);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    .fa-circle-check {
+      font-size: 25px;
       color: #fff;
-      font-size: 30px;
-      border-radius: 0px 20px 20px 0;
-      -webkit-border-radius: 0px 20px 20px 0;
-      -moz-border-radius: 0px 20px 20px 0;
-      -ms-border-radius: 0px 20px 20px 0;
-      -o-border-radius: 0px 20px 20px 0;
-      &:hover {
-        opacity: 1;
-      }
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transition: 1s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
     }
   }
+}
+
+.menu-info {
+  cursor: pointer;
+  background-color: #fff;
+  width: 360px;
+  height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  .menu-txt {
+    width: 100%;
+    height: 48px;
+    margin-left: 15px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    /*transition-delay: 0.2s;*/
+  }
+  .menu-price {
+    /*border: 1px solid pink;
+    */
+    font-weight: 700;
+    background-color: #fff;
+    padding: 25px 20px 5px 22px;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+  }
+}
+
+.menu-box:hover .menu-icon {
+  transform: translateX(290px) translateY(-70px);
+  -webkit-transform: translateX(290px) translateY(-70px);
+  -moz-transform: translateX(290px) translateY(-70px);
+  -ms-transform: translateX(290px) translateY(-70px);
+  -o-transform: translateX(290px) translateY(-70px);
+}
+.menu-box:hover .fa-solid {
+  transform: rotate(1080deg);
+  -webkit-transform: rotate(1080deg);
+  -moz-transform: rotate(1080deg);
+  -ms-transform: rotate(1080deg);
+  -o-transform: rotate(1080deg);
+}
+.menu-info:hover .menu-price {
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+}
+.menu-info:hover .menu-txt {
+  width: 210px;
+  height: 48px;
+  margin-left: -7px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

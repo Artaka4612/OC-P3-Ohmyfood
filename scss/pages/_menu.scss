@@ -18,7 +18,7 @@
     margin-right: 85px;
     margin-left: 25px;
     @include breakpoint(large) {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
   .menu-logo {
@@ -34,11 +34,14 @@
   width: 375px;
   min-width: 375px;
   max-width: 500px;
+
   height: auto;
   width: 100%;
   position: relative;
   top: 25px;
   z-index: -1;
+  display: flex;
+  align-items: center;
   @include breakpoint(large) {
     display: block;
     align-items: center;
@@ -49,7 +52,13 @@
 }
 
 //main-page
-
+main {
+  border-radius: 25px 25px 0px 0px;
+  -webkit-border-radius: 25px 25px 0px 0px;
+  -moz-border-radius: 25px 25px 0px 0px;
+  -ms-border-radius: 25px 25px 0px 0px;
+  -o-border-radius: 25px 25px 0px 0px;
+}
 //titre
 .menu-title {
   display: flex;
@@ -59,28 +68,45 @@
     width: 45%;
     margin: auto;
     margin-bottom: 50px;
+    border-bottom: 2px solid #d3d3d3;
   }
 
   h1 {
     font-family: "Shrikhand", cursive;
     font-size: 28xp;
+    font-weight: 100;
+    margin-bottom: 40px;
+    @include breakpoint(large) {
+      padding-top: 20px;
+      border-top: 2px solid #000;
+    }
   }
   .fa-solid {
     font-size: 25px;
     color: #f2f2f2;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    text-shadow: -1px 0 rgb(36, 35, 36), 0 1px rgb(36, 35, 36),
+      1px 0 rgb(36, 36, 36), 0 -1px rgb(36, 36, 36);
+    @include breakpoint(large) {
+      color: $color-secondary;
+    }
   }
 }
 
 //Menus
 .menu-page {
   background-color: #f2f2f2;
-  border: 2px solid rgba($color: #dddddd, $alpha: 0.8);
+  border: 1px solid rgba($color: #dddddd, $alpha: 0.8);
   border-radius: 25px;
   padding-bottom: 30px;
   padding-top: 20px;
   margin-top: -30px;
   z-index: 1;
+  @include breakpoint(large) {
+    background-color: #fff;
+  }
+  .menu-main {
+    margin-bottom: 30px;
+  }
 }
 
 .menu-bloc {
@@ -90,7 +116,7 @@
 
   h2 {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 25px;
     margin-left: 20px;
@@ -106,7 +132,15 @@
     }
   }
 }
-
+.menu-txt {
+  line-height: 1.4;
+  h3 {
+    font-size: 16px;
+  }
+  &-sb {
+    font-size: 15px;
+  }
+}
 .bloc-plats {
   @include breakpoint(large) {
     display: flex;
@@ -121,4 +155,9 @@
     width: 25%;
     margin-bottom: 50px;
   }
+}
+.btn-pink__menu {
+  width: 200px;
+  margin-left: 80px;
+  margin-top: 60px;
 }
