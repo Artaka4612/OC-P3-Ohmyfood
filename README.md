@@ -1,6 +1,6 @@
   # Oh my food 
   
-  Toisième projet du parcours "Développeur web". Dynamisez une page web avec des animations CSS<br>
+  Troisième projet du parcours "Développeur web". Dynamisez une page web avec des animations CSS<br>
   Intégrer la maquette du site Ohmyfood; entreprise de commande de repas en ligne.
   
   ## Technologie
