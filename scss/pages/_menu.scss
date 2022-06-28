@@ -3,14 +3,11 @@
 .menu-header-logo {
   display: flex;
   align-items: center;
-  width: 150%;
+  width: 100%;
   margin: auto;
   padding-top: 35px;
 
   @include breakpoint(large) {
-    /*padding-bottom: 20px;
-    width: 35%;
-    margin: auto;*/
     margin-bottom: 30px;
   }
 
@@ -30,9 +27,10 @@
 }
 //image-resto
 
+.menu-img-resto img {
+  width: 100%;
+}
 .menu-img-resto {
-  width: 375px;
-  min-width: 375px;
   max-width: 500px;
 
   height: auto;
@@ -54,10 +52,6 @@
 //main-page
 main {
   border-radius: 25px 25px 0px 0px;
-  /*-webkit-border-radius: 25px 25px 0px 0px;
-  -moz-border-radius: 25px 25px 0px 0px;
-  -ms-border-radius: 25px 25px 0px 0px;
-  -o-border-radius: 25px 25px 0px 0px;*/
 }
 //titre
 .menu-title {
