@@ -35,6 +35,11 @@
 }
 
 .footer-container {
+  @include breakpoint(medium) {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+  }
   @include breakpoint(large) {
     width: 40%;
     margin: auto;
