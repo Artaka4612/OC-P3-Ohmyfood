@@ -1205,7 +1205,7 @@ main {
 }
 @media (min-width: 900px) {
   .menu-title .fa-solid {
-    color: #ff79da;
+    color: #9356dc;
   }
 }
 
@@ -1327,4 +1327,8 @@ main {
   width: 200px;
   margin-left: 80px;
   margin-top: 60px;
+}
+
+footer {
+  font-family: "roboto", sans-serif;
 }/*# sourceMappingURL=style.css.map */
