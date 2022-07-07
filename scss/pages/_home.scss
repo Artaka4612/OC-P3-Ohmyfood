@@ -1,3 +1,10 @@
+.main-page {
+  min-width: 320px;
+  max-width: 1440px;
+
+  align-items: center;
+}
+
 //HEADER
 
 .logo {
@@ -55,9 +62,19 @@
 //SECTION-FONCTIONNEMENT
 
 .fonct {
-  width: 90%;
+  /*width: 90%;*/
+  width: 100%;
   margin: auto;
   margin-bottom: 60px;
+  @include breakpoint(small) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include breakpoint(medium) {
+    padding-top: 80px;
+  }
+
   .fonct-list {
     @include breakpoint(large) {
       display: flex;
@@ -92,6 +109,7 @@
 }
 
 //Restaurants
+
 .restau-photo {
   background: #f2f2f2;
   card.photo {

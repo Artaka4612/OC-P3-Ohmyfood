@@ -695,9 +695,10 @@ template {
 
 .btn-fonct-card {
   color: #000;
-  width: 320px;
+  width: 300px;
   height: 70px;
   margin: auto;
+  margin-left: 25px;
   font-weight: bold;
   margin-bottom: 30px;
   display: flex;
@@ -952,6 +953,12 @@ a:visited {
   color: #000;
 }
 
+.main-page {
+  min-width: 320px;
+  max-width: 1440px;
+  align-items: center;
+}
+
 .logo {
   display: block;
   width: 40%;
@@ -1003,9 +1010,22 @@ a:visited {
 }
 
 .fonct {
-  width: 90%;
+  /*width: 90%;*/
+  width: 100%;
   margin: auto;
   margin-bottom: 60px;
+}
+@media (min-width: 320px) {
+  .fonct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 700px) {
+  .fonct {
+    padding-top: 80px;
+  }
 }
 @media (min-width: 900px) {
   .fonct .fonct-list {
