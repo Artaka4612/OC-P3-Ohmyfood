@@ -26,6 +26,7 @@
   -moz-transition: box-shadow 400ms ease-out, opacity 500ms ease-out;
   -ms-transition: box-shadow 400ms ease-out, opacity 500ms ease-out;
   -o-transition: box-shadow 400ms ease-out, opacity 500ms ease-out;
+
   &:hover {
     opacity: 0.8;
     box-shadow: 2px 2px 8px 2px rgba(75, 74, 74, 1);
@@ -36,10 +37,10 @@
 
 .btn-fonct-card {
   color: #000;
-  width: 300px;
+  width: 320px;
   height: 70px;
   margin: auto;
-  margin-left: 25px;
+  margin-left: 15px;
   font-weight: bold;
   margin-bottom: 30px;
   display: flex;

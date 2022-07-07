@@ -1,8 +1,6 @@
 .main-page {
-  min-width: 320px;
-  max-width: 1440px;
-
-  align-items: center;
+  width: 100%;
+  margin: auto;
 }
 
 //HEADER
@@ -12,9 +10,6 @@
   width: 40%;
   margin: auto;
   padding: 25px 0 20px 0;
-  @include breakpoint(large) {
-    width: 25%;
-  }
 }
 
 //SECTION-LOCALITE
@@ -33,6 +28,7 @@
 }
 
 //SECTION-RECHERCHE-RESTO
+
 .search-resto {
   height: 290px;
   margin: auto;
@@ -62,19 +58,15 @@
 //SECTION-FONCTIONNEMENT
 
 .fonct {
-  /*width: 90%;*/
-  width: 100%;
+  width: 90%;
   margin: auto;
   margin-bottom: 60px;
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 50px;
   }
-  @include breakpoint(medium) {
-    padding-top: 80px;
-  }
-
   .fonct-list {
     @include breakpoint(large) {
       display: flex;
@@ -95,7 +87,6 @@
       text-align: center;
       margin-bottom: 50px;
     }
-
     @include breakpoint(large) {
       text-align: center;
       margin-bottom: 50px;
@@ -113,11 +104,9 @@
 .restau-photo {
   background: #f2f2f2;
   card.photo {
-    card.photo {
-      @include breakpoint(large) {
-        text-align: center;
-        margin-bottom: 50px;
-      }
+    @include breakpoint(large) {
+      text-align: center;
+      margin-bottom: 50px;
     }
   }
   > h2 {
@@ -138,7 +127,8 @@
     margin: auto;
     padding-bottom: 65px;
     @include breakpoint(medium) {
-      width: 80%;
+      width: 90%;
+
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -149,9 +139,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      margin-left: 120px;
     }
     @include breakpoint(xlarge) {
       width: 70%;
+      margin-left: 280px;
     }
   }
 }
