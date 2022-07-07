@@ -94,6 +94,10 @@ main {
     color: #f2f2f2;
     text-shadow: -1px 0 rgb(36, 35, 36), 0 1px rgb(36, 35, 36),
       1px 0 rgb(36, 36, 36), 0 -1px rgb(36, 36, 36);
+    @include breakpoint(medium) {
+      color: $color-primary;
+      margin-left: 22px;
+    }
     @include breakpoint(large) {
       color: $color-primary;
     }
